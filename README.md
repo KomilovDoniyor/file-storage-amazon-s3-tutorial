@@ -1,4 +1,4 @@
-# file-storage-amazon-s3-tutorial
+# File-storage-amazon-s3-tutorial
 ### Project description
 This shows that the project saves files to system, amazon s3 and database
 
