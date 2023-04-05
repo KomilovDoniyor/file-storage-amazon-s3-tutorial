@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/file-storage-s3-db
+    username: postgres
+    password: 25052001Dm.
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  servlet:
+    multipart:
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 220MB
+
+system:
+  folder:
+    path: /upload/files/
+
+cloud:
+  aws:
+    credentials:
+      access-key: aws-access-key #Bu yerga amazon s3 ning access keyi qo'yiladi
+      secret-key: aws-secret-key #Bu yerga amazon s3 ning secret keyi qo'yiladi
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: filestorage-example
